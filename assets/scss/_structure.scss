@@ -1,0 +1,53 @@
+main {
+    padding-left: 102px;
+
+    >section {
+        display: none;
+        padding-right: 32px;
+        padding-left: 32px;
+
+        &:not(#home) {
+            padding-top: 64px;
+        }
+
+        &.active {
+            display: block;
+        }
+
+        header.has-bg {
+            position: relative;
+            display: inline-flex;
+
+            img {
+                position: absolute;
+                top: 15px;
+                left: -72px;
+            }
+        }
+
+        header.custom {
+            position: relative;
+            text-align: center;
+            margin-bottom: 42px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background: $secondary;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: -1;
+            }
+
+            h2 {
+                display: inline-block;
+                padding: 0 24px;
+                background: $dark_bg;
+            }
+        }
+
+    }
+}

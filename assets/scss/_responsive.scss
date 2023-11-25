@@ -1,0 +1,213 @@
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1199px) {
+    #about_me {
+        .languages-skills .languages-key-skills {
+            padding-right: 12px;
+        }
+    }
+
+    #my_resume {
+        .experience {
+            margin-top: 100px;
+        }
+    }
+
+    #contact_me {
+        .container {
+            .form {
+                padding-right: 12px;
+            }
+
+            .info {
+                padding-left: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    #home {
+        .image {
+            justify-content: flex-start;
+            height: unset;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .modal#workModal .modal-dialog .modal-content .modal-body .modal-close-button {
+        right: 10px;
+        top: 10px;
+    }
+
+    #contact_me {
+        .container {
+            .info {
+                margin-top: 80px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #sidebar {
+        background: darken($secondary, 30%);
+        padding-right: 60px;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+
+        &.open {
+            transform: translateX(0);
+        }
+
+        .toggle-sidebar {
+            display: flex;
+        }
+
+        .logo {
+            text-align: left;
+        }
+
+        nav ul li {
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+
+                &.active {
+                    &:before {
+                        opacity: 0;
+                    }
+                }
+
+                span {
+                    display: block;
+                    padding-left: 8px;
+                }
+            }
+
+            >span {
+                display: none;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    main {
+        padding-left: 0;
+
+        >section header.has-bg img {
+            left: -13px;
+            top: -4px;
+        }
+    }
+
+    #home {
+        background-image: unset;
+
+        .info {
+            padding-top: 80px;
+
+            .socials {
+                margin-top: 70px;
+
+                ul {
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    #about_me {
+        .hero .info .buttons {
+            flex-direction: column;
+
+            a {
+                width: 100%;
+                text-align: center;
+
+                &:first-child {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+
+    #my_resume {
+        .items {
+            .item {
+                position: relative;
+
+                .icon {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -23px;
+                    z-index: 2;
+                    margin-top: 0;
+                    background: rgba($secondary, 0.75);
+
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                .box:before {
+                    display: none;
+                }
+            }
+        }
+
+        .education,
+        .experience {
+            padding-right: 12px;
+            padding-left: 12px;
+        }
+    }
+
+    .modal#workModal {
+        .modal-dialog .modal-content .modal-body {
+            img {
+                height: unset;
+            }
+
+            .left {
+                padding-right: 0;
+            }
+
+            .right {
+                padding-left: 0;
+                padding-top: 32px;
+            }
+        }
+    }
+
+    #contact_me {
+        .container {
+            .info {
+                .item {
+                    flex-direction: column;
+                    text-align: center;
+                    margin-bottom: 32px;
+
+                    i {
+                        margin-right: 0;
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
