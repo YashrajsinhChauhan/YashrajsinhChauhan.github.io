@@ -118,7 +118,7 @@ function toggleMode() {
         new Audio('./assets/audio/light.wav').play()
     } else {
         theme = "dark";
-        new Audio('./assets/audio/dark.wav').play()
+        new Audio('./assets/audio/light.wav').play()
     }
 
     document.querySelector('html').setAttribute("theme", theme)
